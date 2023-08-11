@@ -1,0 +1,14 @@
+# chulseok/graphql/mutations/exampleMutation.graphql
+
+mutation ExampleMutation($input: ExampleInput!) {
+  exampleMutation(input: $input) {
+    id
+    name
+    description
+  }
+}
+
+input ExampleInput {
+  name: String!
+  description: String!
+}
